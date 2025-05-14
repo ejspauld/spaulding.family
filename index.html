@@ -65,22 +65,32 @@
     .about-wrapper {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
   align-items: flex-start;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
 }
 
 .about-photo {
-  max-width: 300px;
-  width: 100%;
+  width: 300px;
   height: auto;
   border-radius: 12px;
   flex-shrink: 0;
+}
+
+.about-wrapper > div {
+  flex: 1;
+  min-width: 0;
 }
 .full-width {
   max-width: none;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
 }
   </style>
 </head>
