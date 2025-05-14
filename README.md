@@ -1,0 +1,2 @@
+# spaulding.family
+personal website
