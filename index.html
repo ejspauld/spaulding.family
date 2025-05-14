@@ -62,6 +62,21 @@
       padding: 1rem;
       text-align: center;
     }
+    .about-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
   </style>
 </head>
 <body>
@@ -88,8 +103,13 @@
 
   <section class="section" id="about">
     <h2>Who We Are</h2>
-    <p>Eric works in cloud technology (yes, the internet kind), and Cara works in finance for a private equity firm in Cleveland. We’re professionals, devoted parents, and the kind of people who return your trash cans from the curb and bring cookies to new neighbors.</p>
-    <p>We’ve been dreaming of living in this community for years—and we’re finally ready to put down roots. We’re serious buyers, fully pre-approved, and flexible on timing. If you’ve even <em>thought</em> about selling, we’d love to talk—no pressure, just a conversation.</p>
+    <div class="about-wrapper">
+      <img src="family.jpg" alt="Our family photo" class="about-photo">
+      <div>
+        <p>Eric works in cloud technology (yes, the internet kind), and Cara works in finance for a private equity firm in Cleveland. We’re professionals, devoted parents, and the kind of people who return your trash cans from the curb and bring cookies to new neighbors.</p>
+        <p>We’ve been dreaming of living in this community for years—and we’re finally ready to put down roots. We’re serious buyers, fully pre-approved, and flexible on timing. If you’ve even <em>thought</em> about selling, we’d love to talk—no pressure, just a conversation.</p>
+      </div>
+    </div>
   </section>
 
   <section class="section" id="why">
